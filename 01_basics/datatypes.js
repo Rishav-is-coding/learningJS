@@ -14,10 +14,10 @@ console.log(typeof null) //object
 console.log(typeof undefined) //undefined
 
 
-// primitive data type
+// primitive data type  => goes into stack
 // 7 types : string, number, boolean, null, undefined, symbol, bigint
 
-// non-primitive / refrence type
+// non-primitive / refrence type => goes into heap
 // array, objects, functions
 
 //js is dynamic language 
