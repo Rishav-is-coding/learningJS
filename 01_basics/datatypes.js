@@ -12,3 +12,12 @@
 
 console.log(typeof null) //object
 console.log(typeof undefined) //undefined
+
+
+// primitive data type
+// 7 types : string, number, boolean, null, undefined, symbol, bigint
+
+// non-primitive / refrence type
+// array, objects, functions
+
+//js is dynamic language 
