@@ -61,9 +61,41 @@ map.set('USA', "United States of America")
 map.set('Fr', "France")
 map.set('IN', "India")
 
-
+//map only hold unique value
 // console.log(map);
 
 for (const [key, value] of map) {
-    // console.log(key, ':-', value);
+    // console.log(key, ':' , value);
 }
+
+
+//for in loop -> can't iterate in objects using for of loop
+
+const myObject = {
+    js: 'javascript',
+    cpp: 'C++',
+    rb: "ruby",
+    swift: "swift by apple"
+}
+
+for (const key in myObject) {
+   // console.log(`${key} shortcut is for ${myObject[key]}`);
+}
+
+
+const programming = ["js", "rb", "py", "java", "cpp"]
+
+for (const key in programming) {   //-> provides key value = 0, 1, 2, 3, 4...... 
+    //console.log(programming[key]);
+}
+
+
+// const map1 = new Map()   -> not iteratable using for in loop
+// map1.set('IN', "India")
+// map1.set('USA', "United States of America")
+// map1.set('Fr', "France")
+// map1.set('IN', "India")
+
+// for (const [key] in map1) {
+//     console.log(key);
+// }
