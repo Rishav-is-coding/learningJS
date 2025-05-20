@@ -99,3 +99,19 @@ for (const key in programming) {   //-> provides key value = 0, 1, 2, 3, 4......
 // for (const [key] in map1) {
 //     console.log(key);
 // }
+
+
+
+//HIGHER ORDER LOOP
+const coding = ["js", "ruby", "java", "python", "cpp"]
+
+coding.forEach(function (item){
+    //console.log(item)
+})
+
+coding.forEach( (item, index, arr) => {
+    console.log(item, index, arr)
+})
+
+
+//there can be object in array and it can be easily accessed using for each loop
