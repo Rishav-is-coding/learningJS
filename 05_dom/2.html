@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const paerent = document.querySelector('.parent')  // " . " used to search class name
+    console.log(parent.children) // you get html collection - array like property
+
+    //for loop works for array like properties
+    for(let i =0; i <  parent.children.length; i++){
+        console.log(paretn.children[i].innerHTML)
+    }
+
+    //can change styling
+    parent.children[1].style.color = 'orange'
+    console.log(parent.firstElementChild) //gives first child element
+    console.log(parent.lastElementChild) //gives last child element
+
+    const dayone = document.querySelector('.day')
+    console.log(dayone.parentElement) //parent element
+    console.log(dayone.nextElementSibling) //next sibling element
+
+    //node list
+    console.log("Nodes : ", parent.childNodes) //no of child nodes -> only one line break is counted
+
+</script>
+</html>
