@@ -10,7 +10,7 @@ JS engine -> memory head + call Stack (LIFO)
 if Async call is called(eg- settimeout, setinterval) =>
 Async call --> Register CallBack --> Task Queue (FIFO) --> call Stack
 
-fetch() -promise-> similar to tast Queue --> call Stack (High Priority)
+fetch() -promise-> similar to tast Queue(Priority Queue) --> call Stack (High Priority)
 
 
 console.log(1)
